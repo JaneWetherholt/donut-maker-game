@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Project</title>
+    <link rel="stylesheet" href="/src/css/layout.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+</head>
+
+
+
+<body>
+    <!-- one container for all contents -->
+    <div class="flex-container">
+        <!-- div for navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li class="navbar-item"><a href="https://orteil.dashnet.org/cookieclicker/" target="blank">our
+                            inspiration</a></li>
+                    <li class="navbar-item dropdown"><a href="" class="dropbtn">our information</a>
+                        <div class="dropdown-content">
+                            <button class="nav-button" id="company-btn">our company</button>
+                            <button class="nav-button" id="creator-btn">our creator</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        <!-- div for header -->
+        <div class="header">
+            <header>
+                <h1 class="game-title">GoNutz DoNutz</h1>
+                <p class="game-subtitle">THE DOUGHNUT GAME</p>
+            </header>
+        </div>
+        <!-- div for left menu -->
+        <div class="body-container">
+            <div class="left-menu">
+                <p>Auto Clicker</p>
+                <div id="autoClicker">
+                    <p id="auto-clicker-count" class="display-autoClicker-count">Count:</p>
+                    <p id="auto-clicker-price" class="display-autoClicker-price">Price:</p>
+                    <button type="button" class="buy-autoClickers">Buy!</button>
+                </div>
+            </div>
+            <!-- div for anchor -->
+            <div class="anchor">
+                <p id="donut-count" class="display-donuts">Donut count:</p>
+                <p id="donut-click-value" class="display-donut-click-value">Value:</p>
+                <button id="donut-button" class="make-donuts" type="button">Make donuts!</button>
+                <button id="reset-button" class="reset-donuts" type="button">Reset donuts!</button>
+            </div>
+            <!-- div for right menu -->
+            <div class="right-menu">
+                <p>Donut Multiplier</p>
+                <div id="donutMultiplier">
+                    <p id="donut-multiplier-count" class="display-donutMultiplier-count">Count:</p>
+                    <p id="donut-multiplier-price" class="display-donutMultiplier-price">Price:</p>
+                    <button type="button" class="buy-donutMultipliers">Buy!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="company-modal" class="modal">
+            <div class="modal-content">
+                <span id="company-span" class="close">X</span>
+                <p>Fred the Baker Baking Co. was founded on one principle and one principle alone - that there are too
+                    many people and not enough donuts to go around. Enter Donut Maker! We allow our users to make as
+                    many donuts
+                    for themselves as they can possibly stand - and probably more than that! Endless donuts await you
+                    in our donut factory. Step inside and get hungry.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="creator-modal" class="modal">
+        <div class="modal-content">
+            <span id="creator-span" class="close">X</span>
+            <p>Jane Wetherholt is a full stack web developer based in Columbus, OH. In her spare time, she reads
+                to her cat, Bandit, who doesn't care about his literacy level. She also doesn't particularly
+                care for donuts, but also will not turn one down if offered.
+            </p>
+            <a href="">GitHub</a>
+            <a href="">Portfolio</a>
+        </div>
+    </div>
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/eventWiring.js" type="module"></script>
+</body>
+
+</html>
+
+<!-- create cleaerly labeled button to be clicked in the main section of the page -->
+<!-- create an element that will provide the user with the donut count -->
+<!-- create a section of elements that include a purchase button and a count of autoClickers -->
+<!-- create a section of elements that include a purchase button and a count of donutMultipliers -->
+<!-- create a header and add a link that will make company info pop up for the user -->
+<!-- create another link that will open a new tab with cookie clicker's address -->
+<!-- create a modal element that is centered over the application and has a quick bio link about yourself and links to your portfolio & github -->

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet');
+
+:root {
+    --dark-background: #1c4531;
+    --text: #f3f4f6;
+    --light-highlight: #b8332a;
+    --dark-highlight: #812123;
+    --light-background: #668965;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+.game-title {
+    font-family: 'Pacifico', cursive;
+    border-style: solid;
+    border-color: var(--light-background);
+    border-width: 12px 12px 0px;
+}
+
+.game-subtitle {
+    color: var(--text);
+    background-color: var(--light-background);
+}
+.navbar {
+    background-color: var(--dark-background);
+}
+
+.navbar-item {
+    color: var(--text);
+    list-style-type: none;
+}
+.navbar-item a {
+    color: var(--text);
+    text-decoration: none;
+}
+.navbar-item a:hover {
+    background-color: var(--light-background);
+}
+
+.header {
+    background-color:var(--text);
+    color: var(--dark-highlight);
+}
+.container {
+    background-color: var(--text);
+}
+
+.left-menu {
+    background-color: var(--text);
+    color: var(--dark-background);
+}
+.anchor {
+    background-color: var(--text);
+    color: var(--dark-background);
+}
+
+.right-menu {
+    background-color: var(--text);
+    color: var(--dark-background);
+}
+.dropdown-content {
+    background-color: var(--dark-background);
+}
+.nav-button {
+    border: none;
+    background-color: var(--dark-background);
+    color: var(--text);
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+.nav-button:hover {
+    background-color: var(--light-background);
+    padding: 14px 16px;
+}
+.modal {
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+      background-color: var(--light-background);
+      color: var(--text)
+}
+
+.close {
+       font-weight: bold;
+       color:var(--text);
+}
+
+.close:hover, .close:focus {
+    color:var(--dark-background);
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+div .donutMultiplier {
+    background-color:var(--text);
+}
+
+.autoClicker {
+    background-color: var(--light-highlight);
+}
+
+.body-container {
+    background-color: var(--light-background);
+}
+
+.body-container .right-menu, .left-menu, .anchor {
+    font-size: 20px;
+}
+
+.body-container button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: var(--dark-highlight);
+    border-color: var(--dark-highlight);
+    color: var(--text);
+}
+
+button:disabled {
+    background-color: grey;
+    border: none;
+}
+
+button:active {
+    border: none;
+}
+
+.modal-content a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 14px 16px;
+}
